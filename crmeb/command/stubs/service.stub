@@ -1,0 +1,30 @@
+<?php
+/**
+ * @author: 吴昊天<442384644@qq.com>
+ * @day: 2020/7/
+ */
+declare (strict_types = 1);
+
+namespace {%namespace%};
+
+use app\services\BaseServices;
+use app\dao\***\{%className%}Dao;
+
+/**
+ *
+ * Class {%className%}Services
+ * @package {%namespace%}
+ */
+class {%className%}Services extends BaseServices
+{
+
+    /**
+     * {%className%}Services constructor.
+     * @param {%className%}Dao $dao
+     */
+    public function __construct({%className%}Dao $dao)
+    {
+        $this->dao = $dao;
+    }
+
+}
